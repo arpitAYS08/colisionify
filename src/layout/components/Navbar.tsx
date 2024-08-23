@@ -37,7 +37,7 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const handleMouseEnter = (menuTitle:any) => {
-    const selectedItem = menuItems.find(item => item.title === menuTitle);
+    const selectedItem = menuItems.find((item:any) => item.title === menuTitle);
     if (selectedItem && selectedItem.dropdown) {
       setActiveDropdown(menuTitle);
     } else {
