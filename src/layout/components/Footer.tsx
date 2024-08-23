@@ -1,5 +1,5 @@
 import { Box, Container, Typography, Link, useTheme, alpha } from '@mui/material'
-import { useRouter } from 'next/router';
+
 import React from 'react'
 
 const Footer = () => {
