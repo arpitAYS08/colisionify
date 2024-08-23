@@ -22,7 +22,7 @@ const AppThemeProvider: FunctionComponent<PropsWithChildren> = ({ children }) =>
 //   const [state] = useAppStore();
   const [loading, setLoading] = useState(true);
 
-  const currentTheme = useMemo(
+  const currentTheme:any = useMemo(
     () => getThemeByDarkMode(false),
     [] // Observe AppStore and re-create the theme when .darkMode changes
   );
