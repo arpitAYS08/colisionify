@@ -58,9 +58,9 @@ const Navbar = () => {
         right: 0,
         backgroundColor: 'rgba(255, 255, 255, 0.9)',
         backdropFilter: 'saturate(120%) blur(30px)',
-        boxShadow: 'none',
+        boxShadow: 'box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px',
         padding:' 0px 24px',
-        height:'80px'
+        height:'80px',
       }}
     >
       <Toolbar>

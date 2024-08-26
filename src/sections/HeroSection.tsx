@@ -48,15 +48,15 @@ const HeroSection = () => {
     };
   }, [data]);
 
-  console.log(currentItemIndex)
+
   return (
     <Box>
       <motion.div
         style={{
           width: "100%",
           gap: "20px",
-          display: "flex",
-          height: false ? "500px" : "600px",
+          // display: "flex",
+          height: false ? "500px" : "700px",
           flexDirection: false ? "column" : "row",
         }}
         initial={{ opacity: 0 }} // Initial state
@@ -65,41 +65,8 @@ const HeroSection = () => {
         key={currentItemIndex}>
         <div
           style={{
-            width: false ? "100%" : "100%",
-            display: "flex",
-            justifyContent: false ? "flex-start" : "center",
-            alignItems: "center",
-          }}>
-          {/* <motion.video
-            src={'https://www.visme.co/wp-content/uploads/2024/04/fb-with-character-2.mp4'} // Access the 'src' property to get the image URL
-            alt="image"
-            style={{
-              maxWidth: "100%",
-              maxHeight: false ? "300px" : "90%",
-            }}
-            initial={{ opacity: 0, y: 20 }} // Initial animation state
-            animate={{ opacity: 1, y: 0 }} // Animation when visible
-            transition={{ duration: 1.5, ease }} // Transition settings
-            exit={{ opacity: 0, transition: { duration: 0.5 } }}
-          /> */}
-          <motion.img
-            src={data[currentItemIndex].image} // Access the 'src' property to get the image URL
-            alt="image"
-            style={{
-              maxWidth: "100%",
-              maxHeight: false ? "300px" : "90%",
-            }}
-            initial={{ opacity: 0, y: 20 }} // Initial animation state
-            animate={{ opacity: 1, y: 0 }} // Animation when visible
-            transition={{ duration: 1.5, ease }} // Transition settings
-            exit={{ opacity: 0, transition: { duration: 0.5 } }}
-          />
-        </div>
-        <div
-          style={{
             width: false ? "90%" : "100%",
             margin: "auto",
-            // backgroundColor:'red',
             display:'flex',
             flexDirection:'column',
             alignItems:'center'
@@ -137,6 +104,28 @@ const HeroSection = () => {
               {data[currentItemIndex].item3}
             </motion.h6>
           </div>
+        </div>
+        <div
+          style={{
+            width: false ? "100%" : "100%",
+            display: "flex",
+            justifyContent: false ? "flex-start" : "center",
+            alignItems: "center",
+            marginTop:'20px'
+          }}>
+          <motion.img
+            src={data[currentItemIndex].image} // Access the 'src' property to get the image URL
+            alt="image"
+            style={{
+              // maxWidth: "80%",
+              // height: false ? "300px" : "90%",
+              width:'700px',
+            }}
+            initial={{ opacity: 0, y: 20 }} // Initial animation state
+            animate={{ opacity: 1, y: 0 }} // Animation when visible
+            transition={{ duration: 1.5, ease }} // Transition settings
+            exit={{ opacity: 0, transition: { duration: 0.5 } }}
+          />
         </div>
       </motion.div>
     </Box>
