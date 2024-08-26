@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { coalitionifyLogo } from '@/app/assets';
+import { coalitionifyLogo} from '@/app/assets';
 
 
 const menuItems:any = [
@@ -70,13 +70,14 @@ const Navbar = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Image src={coalitionifyLogo} alt="logo" width={200} />
+          <Image src={coalitionifyLogo} alt="logo" width={150} />
           <Stack
             flexGrow={1}
             alignItems="center"
             direction="row"
-            justifyContent="center"
+            justifyContent="flex-end"
             gap={4}
+            pr={'4rem'}
           >
             {menuItems.map((menuItem:any, index:any) => (
               <Typography

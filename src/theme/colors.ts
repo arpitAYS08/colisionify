@@ -1,6 +1,7 @@
 import { PaletteOptions, SimplePaletteColorOptions } from '@mui/material';
 
 const COLOR_PRIMARY: SimplePaletteColorOptions = {
+  // main: '#183819',
   main: 'rgb(38,89,193)',
   contrastText: '#  ',
   // light: '#64B5F6',

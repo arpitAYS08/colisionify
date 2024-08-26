@@ -12,8 +12,8 @@ const Render = ({img, title, subtitle, direction}:any) => {
         </Stack>
         <Stack width={'50%'} alignItems={'center'} justifyContent={'center'}>
             <Reveal width='100%'>
-            <Typography textAlign={'center'} variant='h6' fontWeight={650}>{title}</Typography>
-            <Typography textAlign={'center'} variant='body2'>{subtitle}</Typography>
+            <Typography textAlign={'center'} variant='h5' sx={{fontSize:'1.8rem', fontWeight:650}}>{title}</Typography>
+            <Typography textAlign={'center'} variant='body2' sx={{fontSize:'1rem', fontWeight:500}}>{subtitle}</Typography>
             </Reveal>
         </Stack>
     </Stack>
